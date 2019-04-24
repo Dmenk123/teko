@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	RewriteBase /garbisv3_beta
+	RewriteCond $1 !^(index\.php|assets|assets/css|assets/js|assets/etc|robots\.txt)
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ /garbisv3_beta/index.php/$1 [L]
+	#RewriteRule ^(.*)$ https://teko-cak.surabaya.go.id/$1 [R,L]
+</IfModule>

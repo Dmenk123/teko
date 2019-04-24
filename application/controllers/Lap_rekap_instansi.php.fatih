@@ -1,0 +1,17 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Lap_rekap_instansi extends CI_Controller {
+
+	public function __construct() {
+		parent::__construct();
+	}
+
+	public function index(){
+      $this->load->model(['instansi_model']);
+      
+      $order_by  = 'kode';
+      $this->instansiData = $this->instansi_model->showData("","",$order_by);
+
+			$this->template_view->load_view('laporan/rekap_instansi/rekap_instansi_view');
+  }
+}

@@ -1,0 +1,44 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Lap_per_pegawai extends CI_Controller {
+
+	public function __construct() {
+		parent::__construct();
+	}
+
+	public function index(){
+			$this->datatable = array(
+				0 => array(
+					'modal' => 'modalcariPegawai',
+					'id' => 'tablePegawai',
+					'nama' => 'pegawai',
+					'url' => base_url().'master_pegawai/data_ajax_datatables',
+					'reload' => 'btn-filter-pegawai',
+					'columnDefs' => array(
+						"0"
+					),
+					'klik_ambil_data' => array(
+						0 => array(
+							'wadah' => 'id_pegawai',
+							'urutan' => 0
+						),
+						1 => array(
+							'wadah' => 'nip',
+							'urutan' => 1
+						),
+						2 => array(
+							'wadah' => 'nama',
+							'urutan' => 2
+						)
+					),
+					'data' => array(
+						0 => array(
+							'nama' => 'keyword',
+							'sumber' => '$("#keyword-pegawai").val()'
+						)
+					)
+				)
+			);
+			$this->template_view->load_view('laporan/per_pegawai/per_pegawai_view');
+  }
+}

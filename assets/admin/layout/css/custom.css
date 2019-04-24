@@ -1,0 +1,93 @@
+/* here you can put your own css to customize and override the theme */
+
+/***
+Rounded Portlets
+***/
+/*
+.portlet {
+	border-radius: 4px !important;
+}
+
+.portlet .portlet-title {
+	border-radius: 4px 4px 0px 0px !important;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-body .form-actions  {
+	border-radius: 0px 0px 4px 4px !important;
+}
+*/
+
+.ui-menu {
+width: 200px;
+margin-bottom: 2em;
+}
+.ui-menu {
+list-style: none;
+padding: 2px;
+margin: 0;
+display: block;
+outline: none;
+}
+.ui-autocomplete {
+position: absolute;
+top: 0;
+left: 0;
+cursor: default;
+}
+.ui-corner-all {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.ui-widget-content {
+border: 1px solid #aaaaaa;
+background: #ffffff url("images/ui-bg_glass_75_ffffff_1x400.png") 50% 50% repeat-x;
+color: #000;
+}
+.ui-widget {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 13px;
+}
+.ui-front {
+z-index: 100;
+}
+.ui-menu .ui-menu-item {
+margin: 0;
+padding: 0;
+width: 100%;
+list-style: none;
+border-bottom: 1px solid #31c7b2;
+/*support: IE10, see #8844;*/
+}
+
+.ui-menu .ui-menu-item:hover {
+background:#e7e7e7;
+}
+
+.ui-menu .ui-menu-item a.ui-corner-all {
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+.ui-menu .ui-menu-item a {
+text-decoration: none;
+display: block;
+padding: 5px;
+line-height: 1.5;
+min-height: 0;
+support: IE7;
+font-weight: normal;
+}
+.ui-corner-all {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
